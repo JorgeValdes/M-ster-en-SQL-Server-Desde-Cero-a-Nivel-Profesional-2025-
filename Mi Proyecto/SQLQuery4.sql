@@ -14,3 +14,5 @@ CREATE TABLE Paciente1(
 	CONSTRAINT PK_idpaciente PRIMARY KEY (idpaciente)
 
 )
+--SCRIPT PARA CAMBIO DE NOMBRE DE COLUMNA
+EXEC sp_rename  '[dbo].[Paciente].[pais]' , 'idPais', 'COLUMN'
